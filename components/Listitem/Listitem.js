@@ -1,23 +1,22 @@
-import react from "react";
-import { View ,Text, StyleSheet } from "react-native-web";
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 const ListItem = props => {
-    return(
-        <view style={styles.ListItem}>
+    return (
+        <View style={styles.listItem}>
             <Text>
                 {props.placeName}
             </Text>
-        </view>
+        </View>
     )
-    
 }
 
 const styles = StyleSheet.create({
-    ListItem:{
-        width:"100%",
-        padding:10,
+    listItem: {
+        width: "100%",
+        padding: 10,
         backgroundColor: "#eee",
-        margin:5,
+        margin: 5
     }
 })
 
